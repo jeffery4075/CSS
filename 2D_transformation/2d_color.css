@@ -1,0 +1,40 @@
+h1{
+    background-color: antiquewhite;
+    color: black;
+    text-align:center;
+}
+
+div{
+
+    height: 3cm;
+    width: 3cm;
+    border: 1px solid black;
+    margin: 1cm;
+    text-align: center;
+    margin-left: 50%;
+    border-radius: 10px;
+}
+.a{background-color: red;}
+.b{background-color:blue;}
+.c{background-color: yellow;}
+.d{background-color: green;}
+
+.a:hover{
+    transform: rotate(360deg);
+    transition:1s;
+}
+.b:hover{
+    /* Here transform(left,top) */
+    transform:translate(2cm, 5cm);
+    transition:1s;
+}
+.c:hover{
+
+    transform: scale(1.5);
+    transition:3s;
+}
+.d:hover{
+    /*             x-axis , y-axis          */
+    transform: skew(20deg, 20deg);
+    transition:1s;
+}
