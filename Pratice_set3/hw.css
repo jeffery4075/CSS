@@ -1,0 +1,17 @@
+.Traffic{
+    width: 130px;
+    border: 4px solid #333;
+    border-radius: 16px;
+}
+.Red,.Yellow,.Green{
+    height: 64px;
+    width: 64px;
+    border: 2px solid black;
+    padding: 16px;
+    border-radius: 50%;
+    margin:16px auto;
+}
+
+.Red    { background-color: crimson; }
+.Yellow { background-color: gold; }
+.Green  { background-color: limegreen; }
