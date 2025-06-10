@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+#navbar{
+    height: 60px;
+    background-color: #0f1111;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+
+button{
+    background-color: #f08804;
+    color:white
+    
+}
+a{
+    margin-right: 200px;
+    text-decoration: none; 
+    color:white 
+    /* this is done to remove the underline */
+}
+.contentbox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display:inline-block
+    
+}
+#content{
+    height: 700px;
+}
+
+footer{
+    background-color: #0f1111;
+    color: white;
+    text-align: center;
+}
