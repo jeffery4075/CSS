@@ -1,0 +1,43 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#box1{
+    position: static;
+}
+
+#box2{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+/* now we will do absolute */
+/* here parent class will be body tag */
+/* here when we give top : ..px ,from the very top 10px */
+#box3{
+    position: absolute;
+    top:500px;
+    left:10px;
+}
+
+#box4{
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    /* fixed means it will be fixed to the viewport */
+    /* so it will not move with the page */
+    /* it will always be at the bottom right corner even if we scroll the page */
+}
+
+#box5{
+    position: sticky;
+    left: 50px;
+    top: 50px;
+    /* sticky means it will be fixed to the viewport until it reaches the top of the page */
+    /* then it will scroll with the page */
+}
