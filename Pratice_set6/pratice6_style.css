@@ -1,0 +1,35 @@
+.navbar {
+  background-color: pink;
+}
+/* Only the direct children of .navbar (the <ul>) become flex items. 
+The <li> elements inside the <ul> are not flex items unless you also apply display: flex to 
+the <ul> or to the <li> elements themselves. */
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+    background-color: white;
+}
+
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: cornflowerblue;
+    display: flex;
+    /* here justtify moves left to right default ,wen gien center ,horizontally it became center */
+    justify-content: center;
+    /* align-items moves top to bottom default ,when given center, vertically it became center */
+    align-items: center;
+}
+.inner{
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+}
