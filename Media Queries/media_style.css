@@ -1,0 +1,17 @@
+div{
+    height: 50px;
+    width: 50px;    
+    background-color: pink;
+}
+
+@media (max-width: 500px) {
+    div {
+        background-color: blue;
+    }
+}
+/* here we can set a range */
+@media (min-width: 501px) and (max-width: 800px) {
+    div {
+        background-color: green;
+    }
+}
