@@ -1,0 +1,49 @@
+html, body {
+  margin: 0;
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  background: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  gap: 20px; /* space between shapes */
+}
+.shape {
+  width: 120px;
+  height: 120px;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease; 
+  /*cursor: pointer; */
+}
+/* 5. Square hover effect */
+.square:hover {
+  background-color: #e74c3c; /* red */
+}
+
+/* 6. Diamond: rotate container, counter-rotate inner text */
+.diamond {
+  transform: rotate(45deg);
+}
+.diamond:hover {
+  background-color: #3498db; /* blue */
+}
+.diamond span {
+  display: inline-block;
+  transform: rotate(-45deg);
+}
+
+/* 7. Circle: round corners */
+.circle {
+  border-radius: 50%;
+}
+.circle:hover {
+  background-color: #2ecc71; /* green */
+}
