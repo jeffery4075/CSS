@@ -1,0 +1,165 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans';
+}
+
+html,body {
+    height: 100%;
+    width: 100%
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#header{
+    position: fixed;
+    height: 13%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+}
+/* so when we make header fixed Page 1 will start from the top , and then the header will be overlapping the page*/
+/* you overlap that use a fake header then the page will come, actually the real header will overlap the fake header*/
+#fakeheader{  
+    height: 13%;
+    width: 100%;
+}
+
+#logo{
+    height: 70%;
+    margin: 20px;
+}
+#logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.text{
+    margin: 20px;
+    color:#17055f; 
+}
+.text:hover{color: #031bf6;}
+
+#contactDetails{
+    margin-left: 20px;
+    font-weight: 100;
+}
+.icon{
+    padding: 10px;
+    border-radius: 50px;
+}
+.icon:hover{background-color: lightblue;}
+
+#login{
+    display: flex;
+    padding: 10px;
+    border-radius: 50px;
+}
+#login:hover{background-color: lightblue;}
+
+#try{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+#page1 {
+  height: 87%;
+  width: 100%;
+
+  
+  /* new: */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+#strip{
+    width: 100%;
+    height:8%;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#strip u{
+    margin-left: 10px;
+    font-weight: lighter;
+}
+
+#heading{
+    background-color: blue;
+    width: 100%;
+    height: 16%;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+#content{
+    height: 76%;
+    width: 100%;
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box1{
+    height: 90%;
+    width: 50%;
+    margin: 10px;
+    border: 2px solid black;
+    background-color: white;
+}
+#box2{
+    height: 90%;
+    width: 50%;
+    margin: 10px;
+    border: 2px solid red;
+    background-color: white;
+}
+#but{
+    display: flex;
+    justify-content: center;
+}
+#button1{
+    width: 27%;
+    padding: 10px 20px;
+    background-color: lightblue;
+    color: white;
+    border: 1px solid lightblue;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+#button1:hover{
+    background-color: rgb(4, 99, 131);
+}
+#button2{ 
+    width: 27%;
+    padding: 10px 20px;
+    background-color: lightslategray;
+    color: white;
+    border: 1px solid lightblue;
+    text-align: center;
+    margin-left: 15px;
+    border-radius: 20px;
+}
+#button2:hover{
+    background-color: rgb(4, 99, 131);
+}
+#heading h1 {
+  font-weight: normal;
+}
+
+#page2{
+    height: 87%;
+    width: 100%;
+    background-color: blue;
+}
+
