@@ -1,0 +1,63 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /*At that point, the element’s top-left corner is exactly at the container’s center—but you still see it “pinned” with its corner there. */
+    height: 300px;
+    width: 200px;
+    border: 1px solid salmon;
+    border-radius: 20px;
+    overflow: hidden;/* Think of putting a photo inside the frame and trimming anything that sticks out beyond the edges.*/
+}
+/* So in the nation state the card 4 will be appearing in the top after thatcard 321 will appear */
+/* To make the card would appear in different top Z index */
+.card:hover {
+   z-index: 10 !important;                   /* higher than any static card */
+  transform: translate(-50%, -50%)   /* keep centering... */
+             scale(1.05);            /* ...and pop out slightly */
+}
+
+#card1{
+   
+    z-index: 4;
+    background-color: salmon;
+}
+#card2{
+    z-index: 3;
+    transform: translate(-50%, -50%) rotate(-7deg);
+    background-color: blue;
+}
+#card3{
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(-14deg);
+    background-color: green;
+}
+#card4{
+    z-index: 1;
+    transform: translate(-50%, -50%) rotate(-24deg);
+    background-color: yellow;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
