@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    /* https://grabient.com/HQNgrGA0oJwCzQOwwBzQEzpNAjCnu6AzNCOKYicInAWMEbZPTCDM6BEA/?style=linearGradient */
+
+    background: linear-gradient(45deg, rgba(136, 222, 186, 1.000) 0.000%,
+            rgba(121, 223, 197, 1.000) 8.333%,
+            rgba(112, 217, 209, 1.000) 16.667%,
+            rgba(109, 207, 220, 1.000) 25.000%,
+            rgba(114, 193, 229, 1.000) 33.333%,
+            rgba(125, 177, 234, 1.000) 41.667%,
+            rgba(140, 161, 234, 1.000) 50.000%,
+            rgba(159, 147, 230, 1.000) 58.333%,
+            rgba(179, 137, 222, 1.000) 66.667%,
+            rgba(198, 131, 211, 1.000) 75.000%,
+            rgba(213, 132, 199, 1.000) 83.333%,
+            rgba(222, 137, 188, 1.000) 91.667%,
+            rgba(225, 148, 179, 1.000) 100.000%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 570px;
+    width: 100%;
+    max-width: 360px;/*Replace fixed width: 360px; height: 570px; with max-width and auto height so it shrinks gracefully on small screens:*/
+    border: 1px solid black;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);/*specify the horizontal offset (0), vertical offset (4px), blur radius (15px), and shadow color (rgba(0,0,0,0.2).*/
+    background: #fff;
+    padding: 10px;
+    gap:10px;
+    border-radius: 20px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.card h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.card p{
+    font-size: 1.3rem;
+}
